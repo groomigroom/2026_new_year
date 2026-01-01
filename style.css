@@ -14,7 +14,7 @@
 .full {
     width: 100vw;
     height: 100vh;
-    background-color: aquamarine;
+    background: url(./background_hanji.jpg);
     position: relative;
 }
 
@@ -26,7 +26,6 @@
 
 .title>p {
     font-family: 'Cafe24Surround';
-
     font-size: 44px;
     font-weight: normal;
     text-align: center;
@@ -184,7 +183,78 @@
     }
 }
 
-.title>p {
+.horse_img {
+    position: absolute;
+    bottom: 5vw;
+    left: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateZ(-20deg);
+    transition: transform 0.6s ease;
+}
 
-    opacity: 0.05;
+
+@media screen and (max-width: 768px) {
+    .horse_img {
+        width: 42.5vw;
+        height: 42.5vw;
+    }
+
+    .horse_img>img {
+        width: auto;
+        height: 42.5vw;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .horse_img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .horse_img>img {
+        width: auto;
+        height: 250px;
+    }
+
+}
+
+.groomi_img {
+    position: absolute;
+    bottom: 5vw;
+    right: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateZ(-20deg);
+    transition: transform 0.6s ease;
+}
+
+
+@media screen and (max-width: 768px) {
+    .groomi_img {
+        width: 42.5vw;
+        height: 42.5vw;
+    }
+
+    .groomi_img>img {
+        width: auto;
+        height: 42.5vw;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .groomi_img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .groomi_img>img {
+        width: auto;
+        height: 250px;
+    }
+
 }
