@@ -32,6 +32,9 @@
     letter-spacing: -0.02em;
     line-height: 130%;
     position: absolute;
+    /*수정하기*/
+    -webkit-text-stroke: 3px #e8e8e8;
+    z-index: 2;
 }
 
 .title>p:nth-child(1) {
@@ -192,6 +195,7 @@
     justify-content: center;
     transform: rotateZ(-20deg);
     transition: transform 0.6s ease;
+    z-index: 2;
 }
 
 
@@ -230,6 +234,7 @@
     justify-content: center;
     transform: rotateZ(-20deg);
     transition: transform 0.6s ease;
+    z-index: 2;
 }
 
 
@@ -257,4 +262,58 @@
         height: 250px;
     }
 
+}
+
+.back_nature {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.back_nature>img:nth-child(1) {
+    position: absolute;
+    left: 10vw;
+    width: 50vw;
+    height: auto;
+    animation: dongsan 3s ease 0s infinite;
+}
+
+@keyframes dongsan {
+    0% {
+        bottom: 10vw;
+    }
+
+    50% {
+        bottom: 20vw;
+    }
+
+    100% {
+        bottom: 10vw;
+    }
+}
+
+.back_nature>img:nth-child(2) {
+    position: absolute;
+    top: 30vh;
+    left: 30vw;
+    width: 20vw;
+    height: auto;
+    animation: tree 3s ease 0s infinite;
+}
+
+@keyframes tree {
+    0% {
+        transform: rotate(-30deg);
+    }
+
+    50% {
+        transform: rotate(30deg);
+    }
+
+    100% {
+        transform: rotate(-30deg);
+    }
 }
