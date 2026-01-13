@@ -32,16 +32,24 @@
     letter-spacing: -0.02em;
     line-height: 130%;
     position: absolute;
-    /*수정하기*/
-    -webkit-text-stroke: 3px #e8e8e8;
     z-index: 2;
 }
+
+.title>p::before {
+    z-index: 1;
+    content: attr(data-content);
+    position: absolute;
+    left: 0;
+    -webkit-text-stroke: 4px #50f458;
+}
+
+/*#####*/
 
 .title>p:nth-child(1) {
     top: 0px;
     left: 50%;
     transform: translateX(-50%);
-    width: 116.58px;
+    width: 119.58px;
     height: 57.2px;
     overflow: hidden;
 }
@@ -162,6 +170,7 @@
     height: 57.2px;
     overflow: hidden;
     animation: p_three 8s ease 0s infinite;
+
 }
 
 @keyframes p_three {
@@ -316,4 +325,82 @@
     100% {
         transform: rotate(-30deg);
     }
+}
+
+.back_nature>img:nth-child(3) {
+    position: absolute;
+    right: 10vw;
+    width: 50vw;
+    height: auto;
+    animation: dongsan 3s ease 0s infinite;
+}
+
+.back_nature>img:nth-child(4) {
+    position: absolute;
+    top: 25vh;
+    left: 55vw;
+    width: 15vw;
+    height: auto;
+    animation: tree 3s ease 0s infinite;
+}
+
+.back_nature>img:nth-child(5) {
+    position: absolute;
+    right: 10vw;
+    width: 50vw;
+    height: auto;
+    animation: dongsan_two 3s ease 0s infinite;
+}
+
+@keyframes dongsan_two {
+    0% {
+        bottom: 30vw;
+    }
+
+    60% {
+        bottom: 40vw;
+    }
+
+    100% {
+        bottom: 30vw;
+    }
+}
+
+.back_nature>img:nth-child(6) {
+    position: absolute;
+    top: 15vh;
+    left: 15vw;
+    width: 18vw;
+    height: auto;
+    animation: tree 3s ease 0s infinite;
+    filter: hue-rotate(-25deg);
+}
+
+.back_nature>img:nth-child(7) {
+    position: absolute;
+    left: 13vw;
+    width: 50vw;
+    height: auto;
+    animation: dongsan_two 3s ease 0s infinite;
+
+}
+
+.back_nature>img:nth-child(8) {
+    position: absolute;
+    top: 45vh;
+    left: 55vw;
+    width: 13vw;
+    height: auto;
+    animation: tree 3s ease 0s infinite;
+    filter: hue-rotate(35deg);
+}
+
+.back_nature>img:nth-child(9) {
+    position: absolute;
+    top: 55vh;
+    left: 25vw;
+    width: 13vw;
+    height: auto;
+    animation: tree 3s ease 0s infinite;
+    filter: hue-rotate(15deg);
 }
