@@ -35,13 +35,7 @@
     z-index: 2;
 }
 
-.title>p::before {
-    z-index: 1;
-    content: attr(data-content);
-    position: absolute;
-    left: 0;
-    -webkit-text-stroke: 4px #50f458;
-}
+
 
 /*#####*/
 
@@ -58,6 +52,18 @@
     position: absolute;
     left: 0px;
     animation: p_one_span_one 8s ease 0s infinite;
+}
+
+.title>p:nth-child(1)>span:nth-child(1)::before {
+    z-index: 1;
+    content: attr(data-content);
+    position: absolute;
+    left: 0;
+    text-shadow:
+                -2px -2px 0 #000,
+                2px -2px 0 #000,
+                -2px 2px 0 #000,
+                2px 2px 0 #000;
 }
 
 @keyframes p_one_span_one {
