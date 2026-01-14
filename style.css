@@ -45,25 +45,37 @@
     transform: translateX(-50%);
     width: 119.58px;
     height: 57.2px;
-    overflow: hidden;
+    
 }
 
 .title>p:nth-child(1)>span:nth-child(1) {
     position: absolute;
     left: 0px;
+    z-index: 2;
+    color: #000000;
     animation: p_one_span_one 8s ease 0s infinite;
 }
 
 .title>p:nth-child(1)>span:nth-child(1)::before {
     z-index: 1;
-    content: attr(data-content);
+    content: '2';
     position: absolute;
     left: 0;
+    color: #ffc3c3;
     text-shadow:
-                -2px -2px 0 #000,
-                2px -2px 0 #000,
-                -2px 2px 0 #000,
-                2px 2px 0 #000;
+                -2px -2px 0 #ffc3c3,
+                2px -2px 0 #ffc3c3,
+                -2px 2px 0 #ffc3c3,
+                2px 2px 0 #ffc3c3;
+}
+
+.title>p:nth-child(1)>span:nth-child(1)::after {
+    z-index: 2;
+    content: '2';
+    position: absolute;
+    left: 0;
+    color: #000000;
+
 }
 
 @keyframes p_one_span_one {
