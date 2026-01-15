@@ -190,3 +190,8 @@
     right: 30px;
     background-color: #8c653c;
 }
+
+svg {
+    width: 125px;
+    height: 125px;
+}
